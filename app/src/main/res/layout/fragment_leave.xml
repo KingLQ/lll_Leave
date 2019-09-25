@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="me.goldze.mvvmhabit.base.BaseViewModel" />
+
+        <variable
+            name="viewModel"
+            type="BaseViewModel" />
+
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_height="150dp"
+            android:background="@drawable/leave_banner_shape"
+            android:layout_width="match_parent">
+
+            <com.youth.banner.Banner
+                android:id="@+id/main_banner"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/leave_apply_shape"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/leave_apply"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:text="@string/leave_xh"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/leave_name"
+                        android:textColor="@color/color_303030"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:background="@null"
+                        android:hint="@string/leave_hint_name"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/color_303030" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:background="@color/color_EBEBEB"
+                    android:layout_height="1px"
+                    android:layout_width="match_parent" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:text="@string/leave_xh"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="开始时间:"
+                        android:textColor="@color/color_303030"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:background="@null"
+                        android:hint="@string/leave_hint_name"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/color_303030" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:background="@color/color_EBEBEB"
+                    android:layout_height="1px"
+                    android:layout_width="match_parent" />
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:text="@string/leave_xh"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="结束时间:"
+                        android:textColor="@color/color_303030"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:background="@null"
+                        android:hint="@string/leave_hint_name"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/color_303030" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:background="@color/color_EBEBEB"
+                    android:layout_height="1px"
+                    android:layout_width="match_parent" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:text="@string/leave_xh"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="请假事由:"
+                        android:textColor="@color/color_303030"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="@string/leave_hint_name"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:minLines="3"
+                        android:textColor="@color/color_303030" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:background="@color/color_EBEBEB"
+                    android:layout_height="1px"
+                    android:layout_width="match_parent" />
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:background="@mipmap/login_btn"
+                        android:gravity="center"
+                        android:id="@+id/login_btn"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:text="@string/login_btn"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

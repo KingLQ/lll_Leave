@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">请假</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_leave">请假</string>
+    <string name="title_dashboard">聊天</string>
+    <string name="title_notifications">我的</string>
+    <string name="action_settings">Settings</string>
+    <string name="leave_recoding">请假记录</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <!-- login -->
+    <string name="login_btn">登录</string>
+    <string name="login_edit_phone">输入手机号</string>
+    <string name="login_edit_password">输入密码</string>
+    <string name="login_kuaijie">快捷登录</string>
+    <string name="login_kuaijie_registe">快捷注册</string>
+    <string name="login_forget_psw">忘记密码？</string>
+    <string name="login_registe">注册</string>
+
+
+    <!-- forget password -->
+    <string name="login_edit_phone_num">输入手机号</string>
+    <string name="login_edit_verification_code">输入验证码</string>
+    <string name="login_edit_reset_password">请重新输入密码</string>
+    <string name="login_edit_setting_name">请输入昵称</string>
+    <string name="login_edit_setting_password">请输入6-20位登录密码</string>
+    <string name="login_edit_setting_again_password">再次确认密码</string>
+    <string name="login_now_login">马上登陆</string>
+    <string name="leave_apply">请假申请</string>
+    <string name="leave_xh">*</string>
+    <string name="leave_name">姓名:</string>
+    <string name="leave_hint_name">请输入姓名</string>
+    <string name="select_department">选择部门</string>
+    <string name="add_department">添加您的部门</string>
+    <string name="add_department_commit">确定</string>
+    <string name="phone_86">+86</string>
+    <string name="get_yanzhengma_txt">获取验证码</string>
+    <string name="my_center_title_txt">个人中心</string>
+    <string name="leave_record">请假记录</string>
+
+    <string name="change_password_old">输入原密码</string>
+    <string name="change_password_new">请输入新密码</string>
+    <string name="change_password_sure">请重新输入新密码</string>
+    <string name="sure_txt">确定</string>
+    <string name="change_password_txt">修改密码</string>
+    <string name="line_company_txt">联系公司</string>
+    <string name="login_out_txt">退出登录</string>
+</resources>

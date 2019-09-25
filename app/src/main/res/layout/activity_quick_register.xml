@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.goldze.mvvmhabit.ui.quicklogin.QuickRegisterViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/quick_login_edit_1_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/quick_login_phone_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone_86"
+                        android:padding="4dp"
+                        android:textColor="@color/color_333333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.quickLoginPhone}"
+                        android:background="@null"
+                        android:hint="@string/login_edit_phone" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/quick_login_edit_line_1_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_below="@id/quick_login_edit_1_ll"
+                    android:layout_marginTop="4dp"
+                    android:background="#3393F9" />
+
+                <LinearLayout
+                    android:id="@+id/quick_login_edit_2_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/quick_login_edit_line_1_iv"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.phoneCode}"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:hint="@string/login_edit_verification_code" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        binding:onClickCommand="@{viewModel.getQuickVerifyCode}"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/get_yanzhengma_txt"
+                            binding:onClickCommand="@{viewModel.getQuickVerifyCode}"
+                            android:textColor="#499CF9"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            binding:onClickCommand="@{viewModel.getQuickVerifyCode}"
+                            android:src="@mipmap/quick_login_password_gj_bg" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/quick_login_edit_line_2_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_below="@id/quick_login_edit_2_ll"
+                    android:layout_marginTop="4dp"
+                    android:background="#3393F9" />
+
+                <LinearLayout
+                    android:id="@+id/quick_login_edit_3_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/quick_login_edit_line_2_iv"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.name}"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:hint="@string/login_edit_setting_name" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/quick_login_edit_line_3_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_below="@id/quick_login_edit_3_ll"
+                    android:layout_marginTop="4dp"
+                    android:background="#3393F9" />
+
+                <LinearLayout
+                    android:id="@+id/quick_login_edit_4_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/quick_login_edit_line_3_iv"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.settingPassword}"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:hint="@string/login_edit_setting_password" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/quick_login_edit_line_4_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_below="@id/quick_login_edit_4_ll"
+                    android:layout_marginTop="4dp"
+                    android:background="#3393F9" />
+
+                <LinearLayout
+                    android:id="@+id/quick_login_edit_5_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/quick_login_edit_line_4_iv"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@={viewModel.surePassword}"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:hint="@string/login_edit_setting_again_password" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_below="@id/quick_login_edit_5_ll"
+                    android:layout_marginTop="4dp"
+                    android:background="#3393F9" />
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/login_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@mipmap/login_btn"
+                    android:gravity="center"
+                    binding:onClickCommand="@{viewModel.quickRegiste}"
+                    android:text="@string/login_registe"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
